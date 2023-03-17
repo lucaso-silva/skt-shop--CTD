@@ -1,0 +1,22 @@
+
+
+:root {
+    --main-font: 'Kanit', sans-serif;
+    --logo-font: 'Racing Sans One', cursive;
+    --bg-color: #000308;
+    --green: #66f384ec;
+    --font-color: #626369;
+    --white: #F1F1F1;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--font-color);
+    font-size: 16px;
+    font-family: var(--main-font);
+}
+
+a {
+    text-decoration: none;
+    color: var(--font-color);
+}
