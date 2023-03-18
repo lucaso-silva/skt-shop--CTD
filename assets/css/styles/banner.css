@@ -1,0 +1,24 @@
+.banner {
+    background-color: var(--second-color);
+    padding: 1.25em 1.75em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner-img {
+    width: 250px;
+    height: 150px;
+}
+
+@media screen and (min-width: 768px) {
+    .banner {
+        flex-direction: row;
+    }
+
+    .banner-img {
+        width: 290px;
+        height: 180px;
+    }
+}

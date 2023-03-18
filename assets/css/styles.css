@@ -1,16 +1,17 @@
-
+@import url("./styles/header.css");
+@import url("./styles/banner.css");
 
 :root {
     --main-font: 'Kanit', sans-serif;
     --logo-font: 'Racing Sans One', cursive;
-    --bg-color: #000308;
-    --green: #66f384ec;
+    --main-color: #000308;
+    --second-color: #f3ff4a;
     --font-color: #626369;
     --white: #F1F1F1;
 }
 
 body {
-    background-color: var(--bg-color);
+    background-color: var(--main-color);
     color: var(--font-color);
     font-size: 16px;
     font-family: var(--main-font);
@@ -18,5 +19,15 @@ body {
 
 a {
     text-decoration: none;
-    color: var(--font-color);
+    cursor: pointer;
+}
+
+.btn {
+    padding: .45em .75em;
+    border: .1em solid var(--main-color);
+}
+
+.title {
+    font-family: var(--logo-font);
+    font-size: 1.75rem;
 }
