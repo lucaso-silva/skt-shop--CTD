@@ -1,0 +1,59 @@
+.builder-title {
+    font-family: var(--logo-font);
+    color: var(--white);
+    font-size: 1.75rem;
+    margin: .75em 0;
+}
+
+.builder-text {
+    margin-bottom: 1.25em;
+}
+
+.cards {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    background-color: var(--second-color);
+    margin-bottom: 1.5em;
+    padding: .75em 1em;
+    text-align: start;
+}
+
+.card-title {
+    /* background-image: url("../../img/rebase-edit.svg");
+    background-position: right;
+    background-repeat: no-repeat; */
+    color: var(--main-color);
+    font-weight: 500;
+    margin-bottom: .75em;
+    border-bottom: .1em solid var(--main-color);
+    padding-bottom: .75em;
+    text-transform: uppercase;
+}
+
+.card-content {
+    text-align: justify;
+}
+
+.card:nth-child(1) .card-title {
+    background-image: url("../../img/rebase-edit.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.card:nth-child(2) .card-title {
+    background-image: url("../../img/shopping-cart.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.card:nth-child(3) .card-title {
+    background-image: url("../../img/shipping.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}

@@ -2,6 +2,7 @@
 @import url("./styles/banner.css");
 @import url("./styles/video.css");
 @import url("./styles/main.css");
+@import url("./styles/builder.css");
 
 :root {
     --main-font: 'Kanit', sans-serif;
