@@ -46,6 +46,7 @@ header a {
     }
 
     .btn-header {
+        font-weight: 500;
         padding: .35em 1em;
         border: .1em solid var(--main-color);
         text-transform: uppercase;

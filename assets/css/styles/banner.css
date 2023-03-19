@@ -26,6 +26,7 @@
 }
 
 .banner-link {
+    font-weight: 500;
     padding: .35em 1em;
     border: .1em solid var(--main-color);
     margin-top: 4.75em;

@@ -1,6 +1,7 @@
 @import url("./styles/header.css");
 @import url("./styles/banner.css");
 @import url("./styles/video.css");
+@import url("./styles/main.css");
 
 :root {
     --main-font: 'Kanit', sans-serif;
@@ -38,4 +39,8 @@ a {
     background-color: var(--font-color);
     color: var(--white);
     border: .1em solid var(--main-color);
+}
+
+em {
+    color: var(--second-color);
 }
