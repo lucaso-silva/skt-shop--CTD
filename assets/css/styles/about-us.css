@@ -1,0 +1,65 @@
+.about-us {
+    padding: 1em;
+    margin: 1.5em 0;
+}
+
+.testimonials {
+    display: flex;
+    flex-direction: row;
+}
+
+.skater-photo {
+    width: 150px;
+    height: 130px;
+    box-shadow: 5px 5px var(--second-color);
+    margin-left: 1.25em;
+    border-top-left-radius: 20px;
+}
+
+.testimonials-content {
+    padding: 0 1em;
+    margin-bottom: 2.75em;
+}
+
+.testimonials-title {
+    font-family: var(--logo-font);
+    font-size: 1.125rem;
+    color: var(--white);
+}
+
+.testimonial-text {
+    margin: 1em 0;
+    font-size: .75rem;
+}
+
+.testimonial-skater {
+    font-size: .85rem;
+    color: var(--white);
+}
+
+.testimonial-skater--description {
+    font-size: .75rem;
+}
+
+.more-about--title {
+    font-family: var(--logo-font);
+    font-size: 1.5rem;
+    color: var(--white);
+    text-align: center;
+}
+
+.more-about--text {
+    margin: 1em 0;
+    font-size: .85rem;
+    text-align: justify;
+}
+
+.faq-question {
+    font-size: .75rem;
+    border-bottom: .1em solid var(--font-color);
+    padding: .85em 0 .5em 0;
+    /* background-image: url("../../img/expand_more.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain; */
+}
