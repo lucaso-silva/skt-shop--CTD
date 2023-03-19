@@ -11,7 +11,7 @@ header a {
 }
 
 .logo {
-    width: 130px;
+    width: 170px;
 }
 
 .nav {
@@ -36,6 +36,26 @@ header a {
         display: flex;
         width: 40%;
         justify-content: space-around;
+        align-items: center;
+    }
+
+    .nav-menu--link:hover {
+        cursor: pointer;
+        border-bottom: solid .125em var(--main-color);
+        text-transform: uppercase;
+    }
+
+    .btn-header {
+        padding: .35em 1em;
+        border: .1em solid var(--main-color);
+        text-transform: uppercase;
+    }
+
+    .btn-header:hover {
+        padding: .35em 1em;
+        background-color: var(--font-color);
+        color: var(--white);
+        border: .1em solid var(--main-color);
     }
 
     .menu-hbg--img {

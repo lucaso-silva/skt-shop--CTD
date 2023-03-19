@@ -1,5 +1,6 @@
 @import url("./styles/header.css");
 @import url("./styles/banner.css");
+@import url("./styles/video.css");
 
 :root {
     --main-font: 'Kanit', sans-serif;
@@ -22,12 +23,19 @@ a {
     cursor: pointer;
 }
 
-.btn {
-    padding: .45em .75em;
+/* .btn {
+    padding: .35em 1em;
     border: .1em solid var(--main-color);
+} */
+
+.btn-white {
+    background-color: var(--white);
+    border: .1em solid var(--white);
 }
 
-.title {
-    font-family: var(--logo-font);
-    font-size: 1.75rem;
+.btn-white:hover {
+    padding: .35em 1em;
+    background-color: var(--font-color);
+    color: var(--white);
+    border: .1em solid var(--main-color);
 }
