@@ -4,6 +4,7 @@
 @import url("./styles/main.css");
 @import url("./styles/builder.css");
 @import url("./styles/about-us.css");
+@import url("./styles/newsletter.css");
 
 :root {
     --main-font: 'Kanit', sans-serif;
