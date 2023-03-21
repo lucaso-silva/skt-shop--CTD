@@ -1,0 +1,46 @@
+footer {
+    padding: 1em;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-bottom: 2.75em;
+}
+
+.logo-footer {
+    width: 100px;
+    height: 20px;
+    margin-bottom: .75em;
+}
+
+.menus {
+    margin: .5em 0;
+}
+
+.menu-title {
+    color: var(--white);
+    margin-bottom: .25em;
+    font-size: .95rem;
+}
+
+.footer-menu {
+    display: flex;
+}
+
+.footer-link {
+    font-size: .85rem;
+    text-decoration: none;
+    color: var(--font-color);
+    margin-right: .85em;
+}
+
+footer p {
+    font-size: .85rem;
+    text-align: center;
+}
+
+footer a:hover {
+    color: var(--white);
+}

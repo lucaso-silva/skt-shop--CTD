@@ -6,6 +6,7 @@
 .testimonials {
     display: flex;
     flex-direction: row;
+    margin-bottom: 1em;
 }
 
 .skater-photo {
@@ -28,17 +29,17 @@
 }
 
 .testimonial-text {
-    margin: 1em 0;
+    margin: 1em 0 2em 0;
     font-size: .75rem;
 }
 
 .testimonial-skater {
-    font-size: .85rem;
+    font-size: .75rem;
     color: var(--white);
 }
 
 .testimonial-skater--description {
-    font-size: .75rem;
+    font-size: .65rem;
 }
 
 .more-about--title {
