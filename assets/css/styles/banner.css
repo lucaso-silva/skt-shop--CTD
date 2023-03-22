@@ -21,18 +21,33 @@
 
 .banner-btn {
     display: flex;
-    margin: 1.75em 0;
+    margin: 2.5em 0;
     justify-content: space-around;
+}
+
+.banner-link--white {
+    background-color: var(--white);
+    color: var(--main-color);
+    font-size: .85rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 0.35em 1em;
+    border: 0.1em solid var(--font-color);
+}
+
+.banner-link--white:hover {
+    background-color: var(--font-color);
+    color: var(--white);
+    border: .1em solid var(--main-color);
 }
 
 .banner-link {
     font-weight: 500;
     padding: .35em 1em;
     border: .1em solid var(--main-color);
-    margin-top: 4.75em;
     color: var(--main-color);
     text-transform: uppercase;
-    font-size: .75rem;
+    font-size: .85rem;
 }
 
 .banner-link:hover {
@@ -43,7 +58,6 @@
 .banner-img {
     width: 270px;
     height: 180px;
-    /* box-shadow: 7px 7px var(--main-color); */
     border-bottom-left-radius: 60px;
     border-top-right-radius: 60px;
     border-top-left-radius: 20px;
@@ -52,13 +66,61 @@
 @media screen and (min-width: 768px) {
     .banner {
         flex-direction: row;
+        justify-content: space-around;
     }
+
     .banner-content {
-        width: 50%;
+        width: 40%;
     }
 
     .banner-img {
         width: 290px;
-        height: 180px;
+        height: 200px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .banner-img {
+        width: 340px;
+        height: 230px;
+    }
+
+    .banner-title {
+        font-size: 2.75rem;
+    }
+    
+    .banner-text {
+        font-size: 1.25rem;
+    }
+
+    .banner-link, .banner-link--white {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .banner-content {
+        width: 40%;
+    }
+
+    .banner-img {
+        width: 520px;
+        height: 320px;
+    }
+
+    .banner-title {
+        font-size: 3.25rem;
+    }
+    
+    .banner-text {
+        font-size: 1.5rem;
+    }
+
+    .banner-btn {
+        margin-top: 5em;
+    }
+
+    .banner-link, .banner-link--white {
+        font-size: 1.25rem;
     }
 }
