@@ -1,65 +1,170 @@
 header {
-    background-color: var(--second-color);
-    padding: 1.25em 1.75em;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  background-color: var(--second-color);
+  padding: 1.25em 1.75em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 header a {
-    color: var(--main-color);
+  color: var(--main-color);
 }
 
 .logo {
-    width: 170px;
+  width: 170px;
 }
 
 .nav {
-    display: none;
+  display: none;
+}
+
+.nav-mobile {
+  display: block;
+  position: absolute;
+  background-color: var(--font-color);
+  top: 11%;
+  right: 4%;
+  width: 92vw;
+  padding: 1em;
+  line-height: 1.75;
+  font-size: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 1;
+  box-sizing: border-box;
+  border: .05em solid var(--main-color);
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 30px;
+}
+
+.nav-btn {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  border-top: .1em solid var(--main-color);
+  text-transform: uppercase;
+  margin-top: .75em;
+  padding: .25em .75em 0 .75em;
+}
+
+.btn-header, .btn-white {
+  color: var(--white);
+  font-weight: 500;
 }
 
 @media screen and (min-width: 768px) {
-    .nav {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 70%;
-    }
-    
-    .nav-menu {
-        display: flex;
-        justify-content: space-around;
-        width: 50%;
-    }
-    
-    .nav-btn {
-        display: flex;
-        width: 40%;
-        justify-content: space-around;
-        align-items: center;
-    }
+  .nav {
+    position: inherit;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    font-size: inherit;
+    text-transform: none;
+    border: none;
+  }
 
-    .nav-menu--link:hover {
-        cursor: pointer;
-        border-bottom: solid .125em var(--main-color);
-        text-transform: uppercase;
-    }
+  .nav-menu {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+  }
 
-    .btn-header {
-        font-weight: 500;
-        padding: .35em 1em;
-        border: .1em solid var(--main-color);
-        text-transform: uppercase;
-    }
+  .nav-btn {
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    justify-content: space-around;
+    align-items: center;
+    border-top: none;
+    margin-top: 0;
+  }
 
-    .btn-header:hover {
-        padding: .35em 1em;
-        background-color: var(--font-color);
-        color: var(--white);
-        border: .1em solid var(--main-color);
-    }
+  .nav-menu--link:hover {
+    cursor: pointer;
+    border-bottom: solid 0.125em var(--main-color);
+    text-transform: uppercase;
+  }
 
-    .menu-hbg--img {
-        display: none;
-    }
+  .btn-header {
+    color: var(--main-color);
+    padding: 0.35em 1em;
+    border: 0.1em solid var(--main-color);
+  }
+
+  .btn-header:hover {
+    background-color: var(--font-color);
+    color: var(--white);
+    border: 0.1em solid var(--main-color);
+  }
+
+  .btn-white {
+    background-color: var(--white);
+    color: var(--main-color);
+    padding: 0.35em 1em;
+    border: 0.1em solid var(--font-color);
+  }
+
+  .btn-white:hover {
+    background-color: var(--font-color);
+    color: var(--white);
+    border: .1em solid var(--main-color);
+}
+
+
+  .menu-hbg--img {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header {
+    padding: 1.5em 2.5em;
+  }
+
+  .logo {
+    width: 230px;
+  }
+
+  .nav-menu--link {
+    font-size: 1.125rem;
+  }
+
+  .btn-header {
+    padding: 0.35em 2em;
+  }
+
+  .btn-white {
+    padding: 0.35em 2em;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  header {
+    padding: 1.75em 3.25em;
+  }
+
+  .logo {
+    width: 260px;
+  }
+
+  .nav-menu--link {
+    font-size: 1.5rem;
+  }
+
+  .nav-btn {
+    width: 35%;
+  }
+
+  .btn-header {
+    padding: 0.35em 2em;
+    font-size: 1.125rem;
+  }
+
+  .btn-white {
+    padding: 0.35em 2em;
+    font-size: 1.125rem;
+  }
 }

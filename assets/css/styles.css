@@ -25,6 +25,9 @@ body {
 
 a {
     text-decoration: none;
+}
+
+a:hover {
     cursor: pointer;
 }
 
@@ -33,17 +36,16 @@ a {
     border: .1em solid var(--main-color);
 } */
 
-.btn-white {
+/* .btn-white {
     background-color: var(--white);
     border: .1em solid var(--white);
-}
+} */
 
-.btn-white:hover {
-    padding: .35em 1em;
+/* .btn-white:hover {
     background-color: var(--font-color);
     color: var(--white);
     border: .1em solid var(--main-color);
-}
+} */
 
 em {
     color: var(--second-color);
