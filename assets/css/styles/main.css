@@ -102,3 +102,121 @@
     color: var(--main-color);
     border: .1em solid var(--main-color);
 }
+
+@media screen and (min-width: 768px) {
+    .main {
+        padding: 1em 2.25em;
+    }
+
+    .main-title {
+        font-size: 2.25rem;
+        margin: 0 1.5em .75em 1.5em;
+    }
+    
+    .main-text {
+        font-size: 1.25rem;
+        margin: 0 1.95em 3em 1.95em;
+    }
+
+    .most-sold-itens {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 2em;
+    }
+
+    .most-sold--title {
+        font-size: 1rem;
+    }
+
+    .item {
+        width: 20vw;
+        height: 42.5vh;
+        padding-bottom: .5em;
+    }
+
+    .item-img {
+        width: 100%;
+    }
+
+    .item-name, .item-price {
+        font-size: .85rem;
+    }
+
+    .btn-buy {
+        font-size: .75rem;
+    }
+
+    .main-link {
+        font-size: .85rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .main-title {
+        font-size: 2.75rem;
+    }
+    
+    .main-text {
+        font-size: 1.5rem;
+        width: 70%;
+        margin: 0 auto 3em auto;
+    }
+
+    .most-sold-itens {
+        margin-bottom: 2.75em;
+    }
+
+    .most-sold--title {
+        font-size: 1.25rem;
+    }
+
+    .item-name, .item-price {
+        font-size: 1.15rem;
+    }
+
+    .btn-buy {
+        font-size: .95rem;
+    }
+
+    .main-link {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .main-title {
+        font-size: 3.25rem;
+    }
+    
+    .main-text {
+        font-size: 1.75rem;
+        width: 60%;
+        margin: 0 auto 3em auto;
+    }
+
+    .most-sold-itens {
+        margin-bottom: 4em;
+    }
+
+    .most-sold--title {
+        font-size: 1.5rem;
+    }
+
+    .item {
+        width: 20vw;
+        height: 53vh;
+        padding-bottom: .75em;
+    }
+    
+    .item-name, .item-price {
+        font-size: 1.5rem;
+    }
+
+    .btn-buy {
+        font-size: 1rem;
+    }
+
+    .main-link {
+        font-size: 1.25rem;
+    }
+}

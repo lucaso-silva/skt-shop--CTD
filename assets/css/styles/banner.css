@@ -17,6 +17,7 @@
 
 .banner-text {
     color: var(--main-color);
+    text-align: justify;
 }
 
 .banner-btn {

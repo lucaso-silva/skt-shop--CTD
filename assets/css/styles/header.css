@@ -27,7 +27,7 @@ header a {
   width: 92vw;
   padding: 1em;
   line-height: 1.75;
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   text-align: center;
   text-transform: uppercase;
   z-index: 1;
@@ -45,7 +45,7 @@ header a {
   border-top: .1em solid var(--main-color);
   text-transform: uppercase;
   margin-top: .75em;
-  padding: .25em .75em 0 .75em;
+  padding: .25em 1.75em 0 1.75em;
 }
 
 .btn-header, .btn-white {
