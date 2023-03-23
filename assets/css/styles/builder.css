@@ -57,3 +57,127 @@
     background-repeat: no-repeat;
     background-size: contain;
 }
+
+.card-img {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .builder {
+        margin: 3.75em 0 3em 0;
+    }
+
+    .builder-title {
+        font-size: 2.25rem;
+    }
+
+    .builder-text {
+        font-size: 1.25rem;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .cards {
+        margin: 2em 0;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+        "area1 area3 area5"
+        "area2 area4 area6";
+        gap: .75em;
+    }
+
+    .card {
+        padding-top: 2.75em;
+        margin-bottom: 0;
+    }
+
+    .card:nth-child(1) {
+        grid-area: area1;
+    }
+
+    .card:nth-child(2) {
+        grid-area: area4;
+    }
+
+    .card:nth-child(3) {
+        grid-area: area5;
+    }
+
+    .card-img {
+        display: block; 
+    }
+
+    .card-img--photo {
+        width: 100%;
+        height: 100%;
+    }
+
+    .card-img:nth-child(1) {
+        grid-area: area2;
+    }
+
+    .card-img:nth-child(2) {
+        grid-area: area3;
+    }
+
+    .card-img:nth-child(3) {
+        grid-area: area6;
+    }
+
+    .card-content {
+        padding-top: 1em;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .builder {
+        margin: 6em 0 3.75em 0;
+    }
+
+    .builder-title {
+        font-size: 2.75rem;
+    }
+
+    .builder-text {
+        font-size: 1.5rem;
+        width: 70%;
+        margin: 0 auto 2em auto;
+    }
+
+    .card {
+        padding: 3em 1.25em 1.25em 1.25em;
+    }
+
+    .card-title, .card-content {
+        font-size: 1.5rem;
+    }
+
+    .cards {
+        margin-bottom: 2.75em;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .builder-title {
+        font-size: 3.75rem;
+    }
+
+    .builder-text {
+        font-size: 1.75rem;
+    }
+
+    .card {
+        padding: 3.5em 1.5em 1.5em 1.5em;
+    }
+
+    .card-title, .card-content {
+        font-size: 1.75rem;
+    }
+
+    .cards {
+        margin-bottom: 4em;
+    }
+}
