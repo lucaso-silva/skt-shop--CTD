@@ -27,6 +27,7 @@ footer {
 
 .footer-menu {
     display: flex;
+    flex-direction: row;
 }
 
 .footer-link {
@@ -43,4 +44,74 @@ footer p {
 
 footer a:hover {
     color: var(--white);
+}
+
+@media screen and (min-width: 768px) {
+    .footer-container {
+    flex-direction: row;
+    }
+
+    .logo-footer {
+        width: 130px;
+        height: 30px;
+    }
+
+    .footer-menu {
+        flex-direction: column;
+        line-height: 1.75;
+    }
+    
+    .menu-title {
+        font-size: 1rem;
+    }
+
+    footer p {
+        padding: 1.5em;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .logo-footer {
+        width: 170px;
+        height: 45px;
+    }
+    
+    .menu-title {
+        font-size: 1.35rem;
+    }
+
+    .footer-menu {
+        line-height: 2;
+    }
+
+    .footer-link {
+        font-size: 1.25rem;
+    }
+
+    footer p {
+        font-size: 1.25rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .logo-footer {
+        width: 200px;
+        height: 60px;
+    }
+    
+    .menu-title {
+        font-size: 1.5rem;
+    }
+
+    .footer-menu {
+        line-height: 2.25;
+    }
+
+    .footer-link {
+        font-size: 1.35rem;
+    }
+
+    footer p {
+        font-size: 1.35rem;
+    }
 }
