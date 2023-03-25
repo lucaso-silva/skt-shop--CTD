@@ -1,161 +1,226 @@
 .about-us {
-    padding: 1em;
-    margin: 1.5em 0;
+  padding: 1em;
+  margin: 1.5em 0;
 }
 
 .testimonials {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 1em;
-    justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1em;
+  justify-content: space-around;
 }
 
 .skater-photo {
-    width: 150px;
-    height: 130px;
-    box-shadow: 5px 5px var(--second-color);
-    margin-left: 1.25em;
-    border-top-left-radius: 20px;
+  width: 150px;
+  height: 130px;
+  box-shadow: 5px 5px var(--second-color);
+  margin-left: 1.25em;
+  border-top-left-radius: 20px;
 }
 
 .testimonials-content {
-    padding: 0 1em;
-    margin-bottom: 2.75em;
+  padding: 0 1em;
+  margin-bottom: 2.75em;
 }
 
 .testimonials-title {
-    font-family: var(--logo-font);
-    font-size: 1.125rem;
-    color: var(--white);
+  font-family: var(--logo-font);
+  font-size: 1.125rem;
+  color: var(--white);
 }
 
 .testimonial-text {
-    margin: 1em 0 2em 0;
-    font-size: .75rem;
+  margin: 1em 0 2em 0;
+  font-size: 0.75rem;
 }
 
 .testimonial-skater {
-    font-size: .75rem;
-    color: var(--white);
+  font-size: 0.75rem;
+  color: var(--white);
 }
 
 .testimonial-skater--description {
-    font-size: .65rem;
+  font-size: 0.65rem;
 }
 
 .more-about--title {
-    font-family: var(--logo-font);
-    font-size: 1.5rem;
-    color: var(--white);
-    text-align: center;
+  font-family: var(--logo-font);
+  font-size: 1.5rem;
+  color: var(--white);
+  text-align: center;
 }
 
 .more-about--text {
-    margin: 1em 0;
-    font-size: .85rem;
-    text-align: justify;
+  margin: 1em 0;
+  font-size: 0.85rem;
+  text-align: justify;
 }
 
 .faq-question {
-    font-size: .85rem;
-    border-bottom: .1em solid var(--font-color);
-    padding: .85em 2em .5em .5em;
-    position: relative;
+  font-size: 0.85rem;
+  border-bottom: 0.1em solid var(--font-color);
+  padding: 0.85em 2em 0.5em 0.5em;
+  position: relative;
 }
 
 .faq-question::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-image: url("../../img/expand_more.svg");
-    background-repeat: no-repeat;
-    background-size: 20px;
-    background-position: right;
-    z-index: +1;
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("../../img/expand_more.svg");
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: right;
+  z-index: +1;
+}
+
+.faq-question:hover {
+  cursor: pointer;
 }
 
 @media screen and (min-width: 768px) {
-    .about-us {
-        padding: 1em 2.25em;
-    }
+  .about-us {
+    padding: 1em 2.25em;
+  }
 
-    .skater-photo {
-        width: 250px;
-        height: 200px;
-        margin-right: 2em;
-    }
+  .skater-photo {
+    width: 250px;
+    height: 200px;
+    margin-right: 2em;
+  }
 
-    .testimonials-title {
-        font-size: 2.25rem;
-    }
+  .testimonials {
+    margin-bottom: 2em;
+  }
 
-    .testimonial-text {
-        font-size: 1.25rem;
-    }
+  .testimonials-title {
+    font-size: 2.25rem;
+  }
 
-    .testimonial-skater {
-        font-size: 1rem;
-    }
-    
-    .testimonial-skater--description {
-        font-size: .85rem;
-    }
+  .testimonial-text {
+    font-size: 1.25rem;
+  }
+
+  .testimonial-skater {
+    font-size: 1rem;
+  }
+
+  .testimonial-skater--description {
+    font-size: 0.85rem;
+  }
+
+  .more-about--title {
+    font-size: 2.25rem;
+  }
+
+  .more-about--text {
+    margin: 1.75em 2.5em;
+    font-size: 1.25rem;
+    text-align: center;
+  }
+
+  .faq-question {
+    font-size: 1.25rem;
+  }
 }
 
 @media screen and (min-width: 1024px) {
-    .skater-photo {
-        width: 250px;
-        height: 300px;
-        margin-right: 2em;
-    }
+  .skater-photo {
+    width: 250px;
+    height: 300px;
+    margin-right: 2em;
+  }
 
-    .testimonials-content {
-        width: 60%;
-    }
+  .testimonials {
+    margin-bottom: 3.75em;
+  }
 
-    .testimonials-title {
-        font-size: 2.75rem;
-    }
+  .testimonials-content {
+    width: 60%;
+  }
 
-    .testimonial-text {
-        font-size: 1.5rem;
-    }
+  .testimonials-title {
+    font-size: 2.75rem;
+  }
 
-    .testimonial-skater {
-        font-size: 1.25rem;
-    }
-    
-    .testimonial-skater--description {
-        font-size: 1rem;
-    }
+  .testimonial-text {
+    font-size: 1.5rem;
+  }
+
+  .testimonial-skater {
+    font-size: 1.25rem;
+  }
+
+  .testimonial-skater--description {
+    font-size: 1rem;
+  }
+
+  .more-about--title {
+    font-size: 2.75rem;
+  }
+
+  .more-about--text {
+    margin: 1.75em 3.75em;
+    font-size: 1.5rem;
+  }
+
+  .faq-question {
+    font-size: 1.5rem;
+  }
+
+  .faq-question::after {
+    background-size: 30px;
+  }
+
 }
 
 @media screen and (min-width: 1440px) {
-    .skater-photo {
-        width: 320px;
-        height: 370px;
-        margin-right: 2em;
-    }
+  .about-us {
+    padding: 1em 4em;
+  }
 
-    .testimonials-content {
-        width: 55%;
-    }
+  .skater-photo {
+    width: 320px;
+    height: 370px;
+    margin-right: 2em;
+  }
 
-    .testimonials-title {
-        font-size: 3.75rem;
-    }
+  .testimonials-content {
+    width: 55%;
+  }
 
-    .testimonial-text {
-        font-size: 1.75rem;
-        margin-top: 1.75em;
-    }
+  .testimonials-title {
+    font-size: 3.75rem;
+  }
 
-    .testimonial-skater {
-        font-size: 1.75rem;
-        margin-bottom: .25em;
-    }
-    
-    .testimonial-skater--description {
-        font-size: 1.25rem;
-    }
+  .testimonial-text {
+    font-size: 1.75rem;
+    margin-top: 1.75em;
+  }
+
+  .testimonial-skater {
+    font-size: 1.75rem;
+    margin-bottom: 0.25em;
+  }
+
+  .testimonial-skater--description {
+    font-size: 1.25rem;
+  }
+
+  .more-about--title {
+    font-size: 3.75rem;
+  }
+
+  .more-about--text {
+    margin: 1.75em 5em;
+    font-size: 1.75rem;
+  }
+
+  .faq-question {
+    font-size: 1.75rem;
+  }
+
+  .faq-question::after {
+    background-size: 35px;
+  }
 }
