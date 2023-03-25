@@ -77,9 +77,9 @@ header a {
     flex-direction: row;
     width: 40%;
     justify-content: space-around;
-    align-items: center;
     border-top: none;
     margin-top: 0;
+    padding: 0;
   }
 
   .nav-menu--link:hover {
@@ -90,7 +90,7 @@ header a {
 
   .btn-header {
     color: var(--main-color);
-    padding: 0.35em 1em;
+    padding: 0.15em 1em;
     border: 0.1em solid var(--main-color);
   }
 
@@ -103,7 +103,7 @@ header a {
   .btn-white {
     background-color: var(--white);
     color: var(--main-color);
-    padding: 0.35em 1em;
+    padding: 0.15em 1em;
     border: 0.1em solid var(--font-color);
   }
 
@@ -159,12 +159,10 @@ header a {
   }
 
   .btn-header {
-    padding: 0.35em 2em;
     font-size: 1.125rem;
   }
 
   .btn-white {
-    padding: 0.35em 2em;
     font-size: 1.125rem;
   }
 }
