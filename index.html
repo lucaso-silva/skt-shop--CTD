@@ -21,7 +21,7 @@
             <ul class="nav-menu">
                 <li><a href="#" class="nav-menu--link">Market</a></li>
                 <li><a href="#" class="nav-menu--link">Builder</a></li>
-                <li><a href="#" class="nav-menu--link">Cart</a></li>
+                <li><a href="#" class="nav-menu--link">Cart</a><span class="counter hide">3</span></li>
                 <li><a href="#" class="nav-menu--link">About us</a></li>
             </ul>
             <div class="nav-btn">
@@ -118,13 +118,44 @@
         </section>
     </main>
     <section class="about-us">
-        <div class="testimonials">
-            <img src="./assets/img/skater-2.png" alt="Photo of Skater" class="skater-photo">
-            <div class="testimonials-content">
-                <h2 class="testimonials-title">The <em>Expert's</em> know best.</h2>
-                <p class="testimonial-text">"The printing on the keyboard is legit good, and the durability is no cap way better than others, would recommend.</p>
-                <p class="testimonial-skater">Alessa L.</p>
-                <span class="testimonial-skater--description">Professional Skater</span>
+        <div class="testimonials-wrapper">
+            <div class="inputs">
+                <input type="radio" name="input-testimonials" id="testimonial1" checked>
+                <input type="radio" name="input-testimonials" id="testimonial2">
+                <input type="radio" name="input-testimonials" id="testimonial3">
+            </div>
+
+            <div class="testimonial hide">
+                <img src="./assets/img/skater-2.png" alt="Photo of Skater" class="skater-photo">
+                <div class="testimonials-content">
+                    <h2 class="testimonials-title">The <em>Expert's</em> know best.</h2>
+                    <p class="testimonial-text">"The printing on the keyboard is legit good, and the durability is no cap way better than others, would recommend.</p>
+                    <p class="testimonial-skater">Alessa L.</p>
+                    <span class="testimonial-skater--description">Professional Skater</span>
+                </div>
+            </div>
+            <div class="testimonial hide">
+                <img src="./assets/img/mikolaj-felinski.png" alt="Photo of Skater" class="skater-photo">
+                <div class="testimonials-content">
+                    <h2 class="testimonials-title">The <em>Expert's</em> know best.</h2>
+                    <p class="testimonial-text">"Best place for skates and the latest product drops from the world of skate. Always good folks there to answer and help with questions."</p>
+                    <p class="testimonial-skater">Felinski M.</p>
+                    <span class="testimonial-skater--description">Pofessional Skater</span>
+                </div>
+            </div>
+            <div class="testimonial">
+                <img src="./assets/img/daniel-lincoln.png" alt="Photo of Skater" class="skater-photo">
+                <div class="testimonials-content">
+                    <h2 class="testimonials-title">The <em>Expert's</em> know best.</h2>
+                    <p class="testimonial-text">"Skt.Shop is a great shop! Run by a lifelong skateboarder and staffed by other local skateboarders. They do events for the skateboard community, support local skate brands, and have made several great skateboards!"</p>
+                    <p class="testimonial-skater">Lincoln D.</p>
+                    <span class="testimonial-skater--description">Professional Skater</span>
+                </div>
+            </div>
+            <div class="navigation">
+                <label for="testimonial1">1</label>
+                <label for="testimonial2">2</label>
+                <label for="testimonial3">3</label>
             </div>
         </div>
         <div class="more-about">

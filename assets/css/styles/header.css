@@ -18,6 +18,16 @@ header a {
   display: none;
 }
 
+.counter {
+  display:inline;
+  color: var(--main-color);
+  font-size: inherit;
+  background-color: var(--red);
+  padding: .01em .25em;
+  border-radius: 50%;
+  margin: .25em;
+}
+
 .nav-mobile {
   display: block;
   position: absolute;
