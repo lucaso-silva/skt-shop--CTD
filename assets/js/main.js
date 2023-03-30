@@ -5,6 +5,8 @@ const menuNav = document.querySelector(".nav");
 const questions = document.querySelectorAll(".faq-question");
 const answers = document.querySelectorAll(".faq-answer");
 const buyBtns = document.querySelectorAll(".btn-buy");
+const testimonialsBtns = document.querySelectorAll(".nav-bar");
+const allTestimonials = document.querySelectorAll(".testimonial");
 let numItens = 0
 
 
@@ -15,6 +17,22 @@ function addItemToCart(numItens) {
 
     counterDisplay.classList.remove("hide");
     counterDisplay.textContent = numItens;
+}
+
+function showTestimonial(index) {
+    const testimonialActive = allTestimonials[index]
+    const arrayTestimonials = Array.from(allTestimonials)
+    
+    const divTestimonialShow = arrayTestimonials.splice(index, 1)
+    
+
+    testimonialActive.classList.remove("hide");
+    arrayTestimonials.forEach(arrayTestimonial => arrayTestimonial.classList.add("hide"))
+
+    console.log(testimonialActive);
+    console.log(arrayTestimonials);
+    console.log(divTestimonialShow);
+
 }
 
 function shownAnswer(index) {
@@ -50,6 +68,12 @@ buyBtns.forEach(btn =>{
 questions.forEach((question, index) => {
     question.addEventListener("click", ()=>{
         shownAnswer(index);
+    })
+})
+
+testimonialsBtns.forEach((testimonialBtn, index) => {
+    testimonialBtn.addEventListener("click", ()=> {
+        showTestimonial(index)
     })
 })
 

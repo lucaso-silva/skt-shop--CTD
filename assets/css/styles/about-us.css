@@ -5,9 +5,19 @@
 
 .testimonials-wrapper {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   margin-bottom: 1em;
   justify-content: space-around;
+}
+
+.inputs {
+  display: none;
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: row;
+  overflow-x: hidden;
 }
 
 .testimonial {
@@ -46,6 +56,29 @@
 
 .testimonial-skater--description {
   font-size: 0.65rem;
+}
+
+.navigation {
+  display: flex;
+  bottom: 30px;
+  right: 5px;
+  position: relative;
+  justify-content: end;
+}
+
+.nav-bar  {
+  width: 20px;
+  height: 5px;
+  background-color: transparent;
+  border: .1px solid var(--second-color);
+  margin-right: .5em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: .4s;
+}
+
+.nav-bar:hover {
+  background-color: var(--second-color);
 }
 
 .more-about--title {
