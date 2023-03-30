@@ -34,6 +34,7 @@
     text-transform: uppercase;
     padding: 0.35em 1em;
     border: 0.1em solid var(--font-color);
+    border-radius: 7px;
 }
 
 .banner-link--white:hover {
@@ -46,6 +47,7 @@
     font-weight: 500;
     padding: .35em 1em;
     border: .1em solid var(--main-color);
+    border-radius: 7px;
     color: var(--main-color);
     text-transform: uppercase;
     font-size: .85rem;

@@ -81,6 +81,11 @@
   background-color: var(--second-color);
 }
 
+.inputs input:checked ~ .nav-bar {
+  background-color: var(--second-color);
+  width: 25px;
+}
+
 .more-about--title {
   font-family: var(--logo-font);
   font-size: 1.5rem;
@@ -166,6 +171,19 @@
     font-size: 0.85rem;
   }
 
+  .navigation {
+    right: 30px;
+  }
+
+  .nav-bar {
+    width: 25px;
+    height: 6.75px;
+  }
+
+  .inputs input:checked ~ .nav-bar {
+    width: 30px;
+  }
+
   .more-about--title {
     font-size: 2.25rem;
   }
@@ -214,6 +232,19 @@
 
   .testimonial-skater--description {
     font-size: 1rem;
+  }
+
+  .navigation {
+    right: 90px;
+  }
+
+  .nav-bar {
+    width: 30px;
+    height: 8px;
+  }
+
+  .inputs input:checked ~ .nav-bar {
+    width: 35px;
   }
 
   .more-about--title {
@@ -271,6 +302,19 @@
 
   .testimonial-skater--description {
     font-size: 1.25rem;
+  }
+
+  .navigation {
+    right: 200px;
+  }
+
+  .nav-bar {
+    width: 40px;
+    height: 13px;
+  }
+
+  .inputs input:checked ~ .nav-bar {
+    width: 45px;
   }
 
   .more-about--title {

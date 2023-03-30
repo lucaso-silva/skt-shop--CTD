@@ -25,14 +25,8 @@ function showTestimonial(index) {
     
     const divTestimonialShow = arrayTestimonials.splice(index, 1)
     
-
     testimonialActive.classList.remove("hide");
-    arrayTestimonials.forEach(arrayTestimonial => arrayTestimonial.classList.add("hide"))
-
-    console.log(testimonialActive);
-    console.log(arrayTestimonials);
-    console.log(divTestimonialShow);
-
+    arrayTestimonials.forEach(arrayTestimonial => arrayTestimonial.classList.add("hide"));
 }
 
 function shownAnswer(index) {

@@ -38,6 +38,7 @@
     text-transform: uppercase;
     background-color: var(--second-color);
     border: none;
+    border-radius: 7px;
 }
 
 .subscribe:hover {

@@ -61,6 +61,7 @@ header a {
 .btn-header, .btn-white {
   color: var(--white);
   font-weight: 500;
+  border-radius: 7px;
 }
 
 @media screen and (min-width: 768px) {

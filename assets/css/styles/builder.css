@@ -22,9 +22,6 @@
 }
 
 .card-title {
-    /* background-image: url("../../img/rebase-edit.svg");
-    background-position: right;
-    background-repeat: no-repeat; */
     color: var(--main-color);
     font-weight: 500;
     margin-bottom: .75em;
