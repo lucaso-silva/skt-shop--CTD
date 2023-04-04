@@ -5,12 +5,19 @@
 <p align = "center"> Visit the <a href="https://lucaso-silva.github.io/skt-shop--CTD/">Webpage</a>. </p>
 
 ## Overview
-Page developed using HTML, CSS and JavaScript
+This Page is being developed to improve my HTML, CSS, and JavaScript programming abilities.
+
+The layout was based on a [design template](https://www.figma.com/file/VH0R5712lojInJ0ZmcqDAj/Skateboard-Design-Community-(Community)?node-id=1-279&t=p2fZOFPnKluA6ZzQ-0) created by Mohit Kapkoti and found in Figma. 
 
 > Status: Developing 🚧
 
 ---
 ### Objectives
+- View the optimal layout for the site depending on the device's screen size ✅
+- See hover states for all interactive elements on the page ✅
+- Receive an error message when the newsletter form is submitted if:
+  - The input field is empty
+  - The email address is not formatted correctly
 
 
 ## Built with
@@ -21,6 +28,7 @@ Page developed using HTML, CSS and JavaScript
 - CSS grid
 - JavaScript
 
-## What I learned 💡
+## 🛠️ Continued development
+The next step will be headed for improving this single page into a multipage website, so will be created the Login and Sign Up pages, Market, Builder, and Cart.
 
-### 🛠️ Continued development
+Turn this project into a full-stack application
