@@ -48,6 +48,20 @@
     border: .1em solid var(--main-color);
 }
 
+.error-message {
+    display: none;
+}
+
+.error-message--active {
+    display: block;
+    color: var(--red);
+    font-size: .85rem;
+    margin-top: .5em;
+    margin-left: 2em;
+    text-align: justify;
+    
+}
+
 @media screen and (min-width: 768px) {
     .newsletter {
         flex-direction: row;

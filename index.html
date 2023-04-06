@@ -120,8 +120,8 @@
     <section class="about-us">
         <div class="testimonials-wrapper">
             <div class="inputs">
-                <input type="radio" name="input-testimonials" id="testimonial1" checked>
-                <input type="radio" name="input-testimonials" id="testimonial2">
+                <input type="radio" name="input-testimonials" id="testimonial1">
+                <input type="radio" name="input-testimonials" id="testimonial2" checked>
                 <input type="radio" name="input-testimonials" id="testimonial3">
             </div>
             <div class="testimonials">
@@ -155,7 +155,7 @@
             </div>
             <div class="navigation">
                 <label for="testimonial1" class="nav-bar"></label>
-                <label for="testimonial2" class="nav-bar"></label>
+                <label for="testimonial2" class="nav-bar actived"></label>
                 <label for="testimonial3" class="nav-bar"></label>
             </div>
         </div>
@@ -191,8 +191,11 @@
                 <p class="newsletter-text">We promise its mostly about our skates.</p>
             </div>
             <form>
-                <input type="email" class="input" placeholder="Type in your Email">
-                <button class="subscribe">Subscribe</button>
+                <input oninput="this.setCustomValidity('')" type="email" class="input" placeholder="Type in your Email" required>
+                <button type="submit" class="subscribe">Subscribe</button>
+                <div>
+                    <span class="error-message"></span>
+                </div>
             </form>
         </div>
     </section>

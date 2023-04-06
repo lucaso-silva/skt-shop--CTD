@@ -7,6 +7,10 @@ const answers = document.querySelectorAll(".faq-answer");
 const buyBtns = document.querySelectorAll(".btn-buy");
 const testimonialsBtns = document.querySelectorAll(".nav-bar");
 const allTestimonials = document.querySelectorAll(".testimonial");
+const inputEmail = document.querySelector(".input");
+const buttonEmail = document.querySelector(".subscribe");
+const errorMessage = document.querySelector(".error-message");
+
 let numItens = 0
 
 
@@ -27,6 +31,7 @@ function showTestimonial(index) {
     
     testimonialActive.classList.remove("hide");
     arrayTestimonials.forEach(arrayTestimonial => arrayTestimonial.classList.add("hide"));
+    console.log(testimonialsBtns);
 }
 
 function shownAnswer(index) {
@@ -43,6 +48,28 @@ function shownAnswer(index) {
 
     arrayAnswers.forEach(answer => answer.classList.add("hide"))
     arrayQuestions.forEach(question => question.classList.remove("selected"))
+}
+
+function validateInput() {
+    const inputValidity = inputEmail.checkValidity();
+    
+    let message = ""
+
+    if(inputEmail.value === "") {
+        message = "Please insert a email address"
+    } else if (inputEmail.validity.typeMismatch) {
+        message = "This doesn't look like a valid email. A valid email must be like: name@email.com"
+    } else {
+        message = "";
+    }
+
+    if(!inputValidity) {
+        errorMessage.innerText = message;
+        errorMessage.classList.add("error-message--active");
+    } else {
+        errorMessage.classList.remove("error-message--active");
+        errorMessage.innerText = "";
+    }
 }
 
 
@@ -71,3 +98,9 @@ testimonialsBtns.forEach((testimonialBtn, index) => {
     })
 })
 
+buttonEmail.addEventListener("click", (e)=>{
+    e.preventDefault();
+    validateInput();
+
+    inputEmail.value = "";
+});
