@@ -32,22 +32,6 @@ a:hover {
     cursor: pointer;
 }
 
-/* .btn {
-    padding: .35em 1em;
-    border: .1em solid var(--main-color);
-} */
-
-/* .btn-white {
-    background-color: var(--white);
-    border: .1em solid var(--white);
-} */
-
-/* .btn-white:hover {
-    background-color: var(--font-color);
-    color: var(--white);
-    border: .1em solid var(--main-color);
-} */
-
 em {
     color: var(--second-color);
 }

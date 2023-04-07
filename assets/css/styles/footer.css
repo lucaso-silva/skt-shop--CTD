@@ -42,8 +42,12 @@ footer p {
     text-align: center;
 }
 
-footer a:hover {
+footer a {
     color: var(--white);
+}
+
+footer a:hover {
+    color: var(--red);
 }
 
 @media screen and (min-width: 768px) {
