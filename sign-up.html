@@ -5,35 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up - Skt.Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500&family=Racing+Sans+One&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body>
-    <header>
-        <img src="./assets/img/Logo-SKtShop-black.png" alt="Logotipo Skt-Shop" class="logo">
-        <div class="nav-btn">
-            <a href="#" class="btn header btn-white">Sign up</a>
-        </div>
-    </header>
     <div class="container">
-        <div>
-            <img src="./assets/img/signup-img.png" alt="Image of a skater" class="signup-img">
+        <div class="logo-area">
+            <a href="index.html"><img src="./assets/img/Logo-SKtShop-black.png" alt="Logotipo Skt-Shop" class="logo"></a>
         </div>
         <div class="signup-content">
             <h2 class="title">Let's Go</h2>
-            <p>Enter your personal details and start your journey with us!</p>
-            <form action="submit">
-                <input type="text" placeholder="First Name">
-                <input type="text" placeholder="Last Name">
-                <input type="date" placeholder="Birthday">
-                <input type="text" placeholder="Address">
-                <input type="number" placeholder="Number">
-                <input type="text" placeholder="City">
-                <input type="email" placeholder="Email">
-                <input type="password" placeholder="Password">
-                <input type="password" placeholder="Confirm Password">
-                <button>Login</button>
+            <p class="section-text">Enter your personal details and <em>start your journey</em> with us!</p>
+            <form class="signup-form">
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <input type="text" placeholder="First Name" class="input" required>
+                    <input type="text" placeholder="Last Name" class="input" required>
+                    <input type="date" placeholder="Birthday" class="input" required>
+                </fieldset>
+                <fieldset>
+                    <legend>Address Information</legend>
+                    <input type="text" placeholder="Address" class="input" required>
+                    <input type="number" placeholder="Number" class="input" required>
+                    <input type="text" placeholder="City" class="input" required>
+                </fieldset>
+
+                <hr />
+
+                <fieldset class="email-info">
+                    <legend>Email and Password</legend>
+                    <input type="email" placeholder="Email" class="input" required>
+                    <input type="password" placeholder="Password" class="input" required>
+                    <input type="password" placeholder="Confirm Password" class="input" required>
+                    <button>Sign Up</button>
+                </fieldset>
+                
             </form>
+        </div>
+        <div class="img-area">
+            <img src="./assets/img/signup-img.png" alt="Image of a skater" class="signup-img">
         </div>
     </div>
 </body>

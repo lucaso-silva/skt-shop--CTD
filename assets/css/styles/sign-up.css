@@ -1,8 +1,47 @@
-.signup-img {
-    width: 200px;
-}
 
 .signup-content {
     display: flex;
     flex-direction: column;
+    padding: 1.25em 1.75em;
+}
+
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    margin: .75em 0;
+}
+
+fieldset .input {
+    margin: .75em .25em;
+}
+
+legend {
+    color: var(--white);
+    margin-bottom: .5em;
+}
+
+.email-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .signup-img {
+        width: 200px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    
+}
+
+@media screen and (min-width: 1440px) {
+    
 }

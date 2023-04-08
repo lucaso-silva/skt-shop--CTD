@@ -1,146 +1,146 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 100vw;
-    height: 100vh;
-    box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
 }
 
 .logo-area {
-    background-color: var(--second-color);
-    padding: 1.25em 1.75em;
-    text-align: left;
+  background-color: var(--second-color);
+  padding: 1.25em 1.75em;
+  text-align: left;
 }
 
 .img-area {
-    display: none;
+  display: none;
 }
 
 .login-content {
-    padding: 1.25em 1em;
+  padding: 1.25em 1em;
 }
 
-.login-text {
-    margin: .75em 0;
+.section-text {
+  margin: 0.75em 0;
 }
 
 .title {
-    font-family: var(--logo-font);
-    font-size: 2rem;
-    color: var(--white);
+  font-family: var(--logo-font);
+  font-size: 2rem;
+  color: var(--white);
 }
 
 .login-form {
-    display: flex;
-    flex-direction: column;
-    row-gap: 1.75em;
-    margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.75em;
+  margin-top: 2em;
 }
 
 .login-btn {
-    padding: .35em 1em;
-    border: .1em solid var(--white);
-    border-radius: 7px;
-    font-weight: 500;
-    font-size: .75rem;
-    color: var(--white);
-    background-color: transparent;
-    text-transform: uppercase;
-    font-family: var(--main-font);
-    margin-top: 1em;
+  padding: 0.35em 1em;
+  border: 0.1em solid var(--white);
+  border-radius: 7px;
+  font-weight: 500;
+  font-size: 0.75rem;
+  color: var(--white);
+  background-color: transparent;
+  text-transform: uppercase;
+  font-family: var(--main-font);
+  margin-top: 1em;
 }
 
 .login-btn:hover {
-    background-color: var(--second-color);
-    color: var(--main-color);
-    border: .1em solid var(--main-color);
+  background-color: var(--second-color);
+  color: var(--main-color);
+  border: 0.1em solid var(--main-color);
 }
 
 @media screen and (min-width: 768px) {
-    .container {
-        display: grid;
-        grid-template-columns: auto auto;
-        grid-template-rows: .25fr auto;
-        grid-template-areas: 
-        "top-left rigth"
-        "bottom-left rigth";
-    }
+  .container {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 0.25fr auto;
+    grid-template-areas:
+      "top-left rigth"
+      "bottom-left rigth";
+  }
 
-    .logo-area {
-        grid-area: "top-left"
-    }
+  .logo-area {
+    grid-area: "top-left";
+  }
 
-    .img-area {
-        display: block;
-        grid-area: "bottom-left";
-        background-color: var(--second-color);
-        padding-top: 1.5em;
-    }
+  .img-area {
+    display: block;
+    grid-area: "bottom-left";
+    background-color: var(--second-color);
+    padding-top: 1.5em;
+  }
 
-    .login-img {
-        width: 250px;
-    }
+  .login-img {
+    width: 250px;
+  }
 
-    .login-content {
-        grid-row: span 2;
-        text-align: center;
-        padding: 0 1em;
-        margin: auto 0;
-    }
+  .login-content {
+    grid-row: span 2;
+    text-align: center;
+    padding: 0 1em;
+    margin: auto 0;
+  }
 
-    .title {
-        font-size: 2.5rem;
-    }
+  .title {
+    font-size: 2.5rem;
+  }
 
-    .login-text {
-        margin: 1em 0;
-        font-size: 1.15rem;
-    }
+  .section-text {
+    margin: 1em 0;
+    font-size: 1.15rem;
+  }
 
-    form {
-        margin: auto;
-    }
+  form {
+    margin: auto;
+  }
 
-    .login-btn {
-        font-size: .85rem
-    }
+  .login-btn {
+    font-size: 0.85rem;
+  }
 }
 
 @media screen and (min-width: 1024px) {
-    .login-img {
-        width: 340px;
-    }
+  .login-img {
+    width: 340px;
+  }
 
-    .title {
-        font-size: 3rem;
-    }
+  .title {
+    font-size: 3rem;
+  }
 
-    .login-text {
-        margin: 1.15em 0;
-        font-size: 1.25rem;
-    }
+  .section-text {
+    margin: 1.15em 0;
+    font-size: 1.25rem;
+  }
 
-    .login-btn {
-        font-size: 1rem
-    }
+  .login-btn {
+    font-size: 1rem;
+  }
 }
 
 @media screen and (min-width: 1440px) {
-    .login-img {
-        width: 390px;
-    }
+  .login-img {
+    width: 390px;
+  }
 
-    .title {
-        font-size: 3.75rem;
-    }
+  .title {
+    font-size: 3.75rem;
+  }
 
-    .login-text {
-        margin: 1.15em 0;
-        font-size: 1.5rem;
-    }
+  .section-text {
+    margin: 1.15em 0;
+    font-size: 1.5rem;
+  }
 
-    .login-btn {
-        font-size: 1.25rem
-    }
+  .login-btn {
+    font-size: 1.25rem;
+  }
 }
